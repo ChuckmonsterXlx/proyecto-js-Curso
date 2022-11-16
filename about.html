@@ -12,10 +12,10 @@
 
     <!-- jQuery -->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
-
-    <!-- Sliders -->
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/bxslider/4.2.12/jquery.bxslider.css">
-    <script src="https://cdn.jsdelivr.net/bxslider/4.2.12/jquery.bxslider.min.js"></script>
+    <link rel="stylesheet" href="js/jquery-ui/jquery-ui.min.css" />
+    <link rel="stylesheet" href="js/jquery-ui/jquery-ui.structure.min.css" />
+    <link rel="stylesheet" href="js/jquery-ui/jquery-ui.theme.min.css" />
+    <script type="text/javascript" src="js/jquery-ui/jquery-ui.js"></script>
 
     <!-- Moment -->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.29.4/moment.min.js"></script>
@@ -50,21 +50,28 @@
             </nav>
         </header>
 
-        <!-- Slider -->
-        <div id="slider">
-            <div class="bxslider">
-                <div><img src="img/hojas.jpg" title="Funky roots"></div>
-                <div><img src="img/rojo.jpg" title="The long and winding road"></div>
-                <div><img src="img/cielo.jpg" title="Happy trees"></div>
-            </div>
-        </div>
-
         <!-- Contenido -->
         <section id="content">
 
-            <div id="posts">
+            <div id="box">
+                <!-- Cargar acordeon -->
+                <h2>Sobre mí</h2>
+                <div id="acordeon">
+                    <h3>¿Quienes somos?</h3>
+                    <div>
+                        <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Earum maiores quibusdam ex vel, ullam, velit, ut expedita sunt nihil enim non atque laborum itaque sit perspiciatis error et aliquam culpa!</p>
+                    </div>
 
-                <!-- Cargar los posts desde un JSON -->
+                    <h3>Nuestros servicios</h3>
+                    <div>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nihil suscipit temporibus ipsum! Accusantium corrupti quam optio error sequi debitis ea! Minima sit illo unde nesciunt officia voluptas culpa blanditiis autem?</p>
+                    </div>
+
+                    <h3>Nuestros clientes</h3>
+                    <div>
+                        <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Et dicta eligendi facere sit repudiandae veritatis expedita mollitia, rem ullam ab, illo ea quisquam incidunt. Tempora dolorum atque tempore ad id.</p>
+                    </div>
+                </div>
 
             </div>
 
