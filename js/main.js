@@ -1,7 +1,10 @@
 $(document).ready(function(){
 
+    var sPath = window.location.pathname;
+    var sPage = sPath.substring(sPath.lastIndexOf('/') + 1);
+
     // Slider
-    if(window.location.href.indexOf('index') > -1 || window.location.href.indexOf('') > -1){
+    if(sPage == 'index.html' || sPage == ''){
         $('.bxslider').bxSlider({
             mode: 'fade',
             captions: true,
@@ -11,7 +14,7 @@ $(document).ready(function(){
     
  
     // Posts
-    if(window.location.href.indexOf('index') > -1 || window.location.href.indexOf('') > -1) {
+    if(sPage == 'index.html' || sPage == '') {
         var posts = [
             {
                 title: 'Prueba de titulo 1',
