@@ -1,7 +1,7 @@
 $(document).ready(function(){
 
     // Slider
-    if(window.location.href.indexOf('index') > -1 ){
+    if(window.location.href.indexOf('index') > -1 || window.location.href.indexOf('') > -1){
         $('.bxslider').bxSlider({
             mode: 'fade',
             captions: true,
@@ -11,7 +11,7 @@ $(document).ready(function(){
     
  
     // Posts
-    if(window.location.href.indexOf('index') > -1) {
+    if(window.location.href.indexOf('index') > -1 || window.location.href.indexOf('') > -1) {
         var posts = [
             {
                 title: 'Prueba de titulo 1',
